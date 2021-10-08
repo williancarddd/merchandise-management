@@ -1,7 +1,7 @@
 import sequelize from 'sequelize'
 import { DateTime } from 'luxon'
 import 'dotenv/config'
-import e from 'express'
+
 
 export const config_database:sequelize.Options = {
   dialect: 'mysql',

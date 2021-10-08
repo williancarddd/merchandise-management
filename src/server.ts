@@ -1,5 +1,7 @@
 import 'dotenv/config'
 import  './Database/dataBase'
+import './Database/RelationShips'
+
 import { routers } from './Routes/index.routes'
 import express from 'express'
 import cors from 'cors'
