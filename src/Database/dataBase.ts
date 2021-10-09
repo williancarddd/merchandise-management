@@ -1,14 +1,7 @@
 import sequelize from 'sequelize'
 import { DateTime } from 'luxon'
 import 'dotenv/config'
-
-
-export const config_database:sequelize.Options = {
-  dialect: 'mysql',
-  host:process.env.DATABASE_HOST!,
-  timezone: DateTime.now().toSQL().split(' ')[2],
-  logging: e => console.log('DATABASE_LOG: '+ e + ' 😳')
-}
+import { config_database } from './configDb'
 
 export const connection_mysql = new sequelize.Sequelize(
   process.env.DATABASE_NAME!,

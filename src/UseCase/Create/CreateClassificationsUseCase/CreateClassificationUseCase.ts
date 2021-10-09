@@ -2,7 +2,7 @@ import { Classifications } from "../../../Database/Models/Classifications/Classi
 import { FormatTitle } from "../../../Utils/FormatTitles";
 import { IClassificationDTO } from "./CreateClassificationDTO";
 
-export class CreateClassificationUseCase   {
+export abstract class CreateClassificationUseCase   {
   
   protected async CreateClassification({name, image}: IClassificationDTO):Promise<boolean>{
    try{
