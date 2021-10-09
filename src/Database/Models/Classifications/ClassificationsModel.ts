@@ -1,0 +1,27 @@
+import { connection_mysql } from "../../dataBase";
+import sequelize, {Model} from "sequelize";
+import { ITableClassifications } from "../../../Interfaces/IClassifications";
+
+export class Classifications extends Model<ITableClassifications> implements ITableClassifications {
+  public name_classification!: string
+  public photo_classification!:  string | null
+  public readonly created_at!: Date;
+  public readonly updated_at!: Date;
+}
+
+Classifications.init(
+  {
+  name_classification: {
+    type: sequelize.TEXT,
+    allowNull:false
+  },
+  photo_classification:{
+    type: sequelize.TEXT,
+    allowNull: true
+  }
+}, 
+{
+  sequelize: connection_mysql,
+  tableName: 'tb_classifications',
+  underscored: true
+})

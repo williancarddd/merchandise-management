@@ -1,7 +1,16 @@
-import { Merchandise } from "../../UseCase/Merchandise/MerchandiseModel";
-import { Classifications } from "../../UseCase/Classifications/ClassificationsModel";
+import { Merchandise } from "../Models/Merchandise/MerchandiseModel";
+import { Classifications } from "../Models/Classifications/ClassificationsModel";
+import { connection_mysql } from "../dataBase";
 
-Classifications.hasMany(Merchandise)
-Merchandise.belongsTo(Classifications)
-Classifications.sync({force:false})
-Merchandise.sync({force: false})
+Classifications.hasMany(Merchandise, {
+  foreignKey:{
+    allowNull:false
+  }
+})
+Merchandise.belongsTo(Classifications, {
+  foreignKey:{
+    allowNull:false,
+  }
+})
+
+connection_mysql.sync({force: false})
