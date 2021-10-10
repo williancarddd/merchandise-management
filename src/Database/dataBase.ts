@@ -1,7 +1,7 @@
 import sequelize from 'sequelize'
-import { DateTime } from 'luxon'
 import 'dotenv/config'
 import { config_database } from './configDb'
+
 
 export const connection_mysql = new sequelize.Sequelize(
   process.env.DATABASE_NAME!,

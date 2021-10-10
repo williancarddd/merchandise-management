@@ -4,15 +4,10 @@ import { IClassificationDTO } from "./CreateClassificationDTO";
 
 export abstract class CreateClassificationUseCase   {
   
-  protected async CreateClassification({name, image}: IClassificationDTO):Promise<boolean>{
-   try{
+  protected async CreateClassification({name, image}: IClassificationDTO):Promise<void>{
     await Classifications.create({
       name_classification: FormatTitle(name),
       photo_classification: image
     })
-    return true
-   } catch(err){
-    return false
-   }
   }
 }
