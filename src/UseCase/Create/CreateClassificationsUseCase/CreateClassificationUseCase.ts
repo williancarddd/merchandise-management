@@ -11,7 +11,7 @@ export abstract class CreateClassificationUseCase   {
       photo_classification: image
     })
     return true
-   } catch(err){
+   } catch {
     return false
    }
   }

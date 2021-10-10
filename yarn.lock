@@ -118,6 +118,11 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
+"@types/valid-url@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@types/valid-url/-/valid-url-1.0.3.tgz#a124389fb953559c7f889795a98620e91adb3687"
+  integrity sha512-+33x29mg+ecU88ODdWpqaie2upIuRkhujVLA7TuJjM823cNMbeggfI6NhxewaRaRF8dy+g33e4uIg/m5Mb3xDQ==
+
 "@types/validator@*":
   version "13.6.3"
   resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.6.3.tgz#31ca2e997bf13a0fffca30a25747d5b9f7dbb7de"
@@ -1021,6 +1026,11 @@ uuid@^8.1.0:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+valid-url@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/valid-url/-/valid-url-1.0.9.tgz#1c14479b40f1397a75782f115e4086447433a200"
+  integrity sha1-HBRHm0DxOXp1eC8RXkCGRHQzogA=
 
 validator@^13.6.0:
   version "13.6.0"
