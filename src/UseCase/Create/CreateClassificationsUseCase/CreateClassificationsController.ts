@@ -6,10 +6,10 @@ import { CreateClassificationUseCase } from './CreateClassificationUseCase'
 export class CreateClassificationController extends CreateClassificationUseCase {
   public async handleCreateClassification(req: Request, res: Response):Promise<Response>{
       const data: IClassificationDTO = {
-        name: String(req.body.name),
+        name: req.body.name,
         image: isNaN(req.body.image) ? req.body.image : null
       }
-
+      /// procurar uma forma eficaz para validar
       const create_response = await this.CreateClassification(data)
       if(create_response){
         return  res.json({message: 'Classification created.'})
