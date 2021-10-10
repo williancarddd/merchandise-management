@@ -9,6 +9,7 @@ export class CreateClassificationController extends CreateClassificationUseCase 
         name: req.body.name,
         image: isNaN(req.body.image) ? req.body.image : null
       }
+      console.log(req.body, data)
       /// procurar uma forma eficaz para validar
       const create_response = await this.CreateClassification(data)
       if(create_response){
