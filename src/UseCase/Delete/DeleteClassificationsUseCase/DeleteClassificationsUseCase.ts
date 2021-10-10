@@ -3,12 +3,8 @@ import { IDeleteClassificationsDTO } from "./DeleteClassificationsDTO";
 
 
 export abstract class DeleteClassificationsUseCase{
-  protected async DeleteClassificationsUseCase(id: IDeleteClassificationsDTO):Promise<number | null>{
-   try{
-      const response_delete = await Classifications.destroy({where: {id}})
-      return response_delete
-    } catch(err) {
-      return null
-    }
+  protected async DeleteClassificationsUseCase(id: IDeleteClassificationsDTO):Promise<number>{
+    const response_delete = await Classifications.destroy({where: {id}})
+    return response_delete
   }
 }
