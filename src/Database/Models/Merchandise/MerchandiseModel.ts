@@ -5,6 +5,7 @@ import { ITableMerchandise } from "../../../Interfaces/IMerchandise";
 
 
 export class Merchandise extends Model<ITableMerchandise> implements ITableMerchandise{
+  public id!: number
   public name_merchandise!: string
   public photo_merchandise!: string | null
   public state_merchandise!: boolean
@@ -16,6 +17,12 @@ export class Merchandise extends Model<ITableMerchandise> implements ITableMerch
 
 
 Merchandise.init({
+  id:{
+    type: sequelize.INTEGER,
+    allowNull:false,
+    autoIncrement:true,
+    primaryKey:true
+  },
   name_merchandise: {
     type: sequelize.TEXT,
     allowNull: false   

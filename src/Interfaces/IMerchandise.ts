@@ -1,4 +1,5 @@
 export interface ITableMerchandise{
+  id?: number
   name_merchandise: string
   price_merchandise: number
   photo_merchandise: string | null
