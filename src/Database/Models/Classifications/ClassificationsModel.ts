@@ -8,6 +8,7 @@ export class Classifications extends Model<ITableClassifications> implements ITa
   public photo_classification!:  string | null
   public readonly created_at!: Date;
   public readonly updated_at!: Date;
+
 }
 
 Classifications.init(
