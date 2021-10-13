@@ -4,7 +4,7 @@ import { DeleteClassificationsControllerIns } from '../UseCase/Delete/DeleteClas
 import { SelectClassificationControllerIns } from '../UseCase/Select/SelectClassificationsUseCase'
 import { SelectAllClassificationsControllerIns } from '../UseCase/SelectAll/SelectAllClassificationsUseCase'
 import { UpdateClassificationControllerIns } from '../UseCase/Update/UpdateClassificationsUseCase'
-import {  MiddlewareValidadorEmptyUndefined } from './middlewares/validator.routes'
+import { MiddlewareValidadorEmptyUndefined } from './middlewares/validator.routes'
 const classifications = express.Router()
 
 // all routes relationed with the classification to stay here

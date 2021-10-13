@@ -14,6 +14,7 @@ export class Merchandise extends Model<ITableMerchandise> implements ITableMerch
   public readonly updated_at!: Date
 }
 
+
 Merchandise.init({
   name_merchandise: {
     type: sequelize.TEXT,

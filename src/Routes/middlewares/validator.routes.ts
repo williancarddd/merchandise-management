@@ -10,7 +10,7 @@ export function MiddlewareValidadorEmptyUndefined(req: Request, res: Response, n
     }
   }
 
-  if (empty_fild.length != 0){
+  if (empty_fild.length != 0 || Object.keys(data).length === 0){
     return res.status(400).json({message: ` filds  empty. ` , fildsEmpty: empty_fild})
   }
 
