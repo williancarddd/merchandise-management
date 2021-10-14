@@ -4,6 +4,8 @@ import { CreateMerchandiseControllerIns } from '../UseCase/Create/CreateMerchand
 import { DeleteMerchandiseControllerIns } from '../UseCase/Delete/DeleteMerchandiseUseCase'
 import { SelectMerchandiseControllerIns } from '../UseCase/Select/SelectMerchandiseUseCase'
 import { SelectAllMerchandiseControllerIns } from '../UseCase/SelectAll/SelectAllMerchandiseUseCase'
+import { UpdateMerchandiseControllerIns } from '../UseCase/Update/UpdateMerchandiseUseCase'
+import { UpdateCampMerchandiseControllerIns } from '../UseCase/UpdateCamp/UpdateCampMerchandiseUseCase'
 import {MiddlewareValidadorEmptyUndefined} from './middlewares/validator.routes'
 const merchandise = express.Router()
 
@@ -11,5 +13,6 @@ merchandise.get('/', async (req, res) => SelectAllMerchandiseControllerIns.Selec
 merchandise.get('/:id',async (req, res) =>  SelectMerchandiseControllerIns.SelectMerchandiseController(req, res))
 merchandise.post('/', MiddlewareValidadorEmptyUndefined, async (req, res) =>  CreateMerchandiseControllerIns.CreatMerchandiseController(req, res) )
 merchandise.delete('/:id', async (req, res) => DeleteMerchandiseControllerIns.DeleteMerchandiseController(req, res))
-
+merchandise.put('/:id', MiddlewareValidadorEmptyUndefined, async (req, res) => UpdateMerchandiseControllerIns.UpdateMerchandiseController(req, res))
+merchandise.patch('/:id', MiddlewareValidadorEmptyUndefined, async (req, res) => UpdateCampMerchandiseControllerIns.UpdateCampMerchandiseController(req, res))
 export {merchandise}
