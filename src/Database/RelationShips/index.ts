@@ -1,5 +1,6 @@
 import { Merchandise } from "../Models/Merchandise/MerchandiseModel";
 import { Classifications } from "../Models/Classifications/ClassificationsModel";
+import '../Models/Users/UserModel'
 import { connection_mysql } from "../dataBase";
 
 Classifications.hasMany(Merchandise, {
