@@ -1,6 +1,6 @@
 import { User } from "../../../Database/Models/Users/UserModel";
 import { CreateError } from "../../../Utils/CreateError";
-import { GenerateTokenAcess } from "../../../Utils/GenerateTokeAcess";
+import { GenerateTokenAcess } from "../../../Utils/ManagerTokenAcess";
 import { ComparePassword } from "../../../Utils/ManagerPassword";
 import { ILoginCpanelDTO } from "./LoginCpanelDTO";
 
