@@ -8,7 +8,7 @@ export function MiddlewareVerifyAuth(req: Request, res: Response, next:NextFunct
   if(TOKENJSON){
     jsonwebtoken.verify(TOKENJSON, process.env.JSON_SECRET_WEB_TOKEN, (err, dataToken ) => {
       if(err){
-        return res.status(400).json({message: 'token not authorized.'})
+        return res.status(400).json({message: 'token not authorized.', error: true, type:err.name})
       } else {
         return next()
       }
