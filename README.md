@@ -13,7 +13,11 @@ this is  a project for pratice backend crud.
 ## Start production server
   For start server production, your he must do install dependecies and dobuild the application. 
   - yarn start
-
+# GUIDE READING THIS DOCUMANTATION
+### [Merchandise router api](#merchandise-router-api)
+### [Classification router api](#classifications-router-api)
+### [User router api](#users-router-api)
+### [Auth router api](#auth-router-api)
 # MERCHANDISE ROUTER API
 ## Endpoints
 ### GET /merchandises
