@@ -22,7 +22,8 @@ This endpoint return all merchandises registred in database.
 - not have params
 ### RESPONSE
 - status: 200
-  ```json [
+  ```json
+  [
       {
         "id": 1,
         "name_merchandise": "Product 1",
@@ -40,10 +41,12 @@ This endpoint return all merchandises registred in database.
           "createdAt": "2021-10-21T20:21:26.000Z",
           "updatedAt": "2021-10-21T20:21:26.000Z"
         }
-      }]
-      ```
+      }
+    ]
+     ```
 - status: 404
-  ```json {
+  ```json
+  {
     "message": "Merchandise id [num] Not found"
   }
   ```
