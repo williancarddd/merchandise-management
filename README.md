@@ -17,7 +17,7 @@ this is  a project for pratice backend crud.
 ### [Merchandise router api](#merchandise-router-api)
 ### [Classification router api](#classifications-router-api)
 ### [User router api](#users-router-api)
-### [Auth router api](#auth-router-api)
+### [Auth router api](#auth-router-api-1)
 # MERCHANDISE ROUTER API
 ## Endpoints
 ### GET /merchandises
