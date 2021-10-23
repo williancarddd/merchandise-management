@@ -252,7 +252,7 @@ not have params
 - status: 200
   ```json
   {
-    "message": "classification created".
+    "message": "classification created."
   }
   ```
 - status: 400
