@@ -40,18 +40,21 @@ This endpoint return all merchandises registred in database.
           "createdAt": "2021-10-21T20:21:26.000Z",
           "updatedAt": "2021-10-21T20:21:26.000Z"
         }
-      }]```
+      }]
+      ```
 - status: 404
   ```json {
     "message": "Merchandise id [num] Not found"
-  }```
+  }
+  ```
 ### POST /merchandises
 This endpoint create a new merchandise.
 ### PARAMETERS
 not have params
 ### BODY
 - body router merchandise post
-```json{
+```json
+{
   "name_merchandise": "Product 1",
   "photo_merchandise": "url",
   "state_merchandise": "true | false",
@@ -209,15 +212,17 @@ This endpoint return all classifications registred in database.
 - not have params
 ### RESPONSE
 - status: 200
-  ```json [
+  ```json
+  [
       {
         "id": 1,
         "name_classification": "Name Classification id 1",
         "photo_classification": "url",
         "createdAt": "2020-05-05T00:00:00.000Z",
         "updatedAt": "2020-05-05T00:00:00.000Z"
-      }]
-      ```
+      }
+  ] 
+  ```
 - status: 404
   ```json
   {
@@ -247,7 +252,7 @@ not have params
 - status: 200
   ```json
   {
-    "message": "classification created.
+    "message": "classification created".
   }
   ```
 - status: 400
@@ -297,7 +302,7 @@ This endpoint delete a classification by id.
 - status: 404
   ```json
   {
-    "message": "classification id not found.
+    "message": "classification id not found"
   }
   ```
 - status: 400
@@ -400,7 +405,7 @@ not have params
  {
    "token_access":  "Bearer [token]"
 }
- ```
+```
 - status 400:
   ```json
   {
