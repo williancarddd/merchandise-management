@@ -51,7 +51,7 @@ This endpoint return all merchandises registred in database.
 - status: 404
   ```json
   {
-    "message": "Merchandise id [num] Not found"
+    "message": "not have merchandises."
   }
   ```
 ### POST /merchandises
@@ -113,6 +113,12 @@ This endpoint return a merchandise by id.
       "createdAt": "2021-10-21T20:21:26.000Z",
       "updatedAt": "2021-10-21T20:21:26.000Z"
     }
+  }
+  ```
+ - status: 404
+  ```json
+  {
+    "message": "merchandise id [id] Not found"
   }
   ```
 ### PATCH /merchandises/:id
