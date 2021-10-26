@@ -417,7 +417,7 @@ not have params
  ```json
  {
    "token_access":  "Bearer [token]"
-}
+ }
 ```
 - status 400:
   ```json
