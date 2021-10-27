@@ -98,7 +98,7 @@ This endpoint return a merchandise by id.
   ```json
   {
     "id": 1,
-    "name_merchandise": "Product 1",
+    "name_merchandise": "Product  1",
     "photo_merchandise": "url",
     "state_merchandise": "true | false",
     "price_merchandise": "100.00",
